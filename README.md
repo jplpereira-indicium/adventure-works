@@ -11,8 +11,11 @@ You have been hired by Adventure Works (AW), a rapidly growing bicycle manufactu
 | Website       | Wordpress        | 
 
 During initial conversations, you also identified that the project does not have unanimous support within the company; there are doubts regarding the timeline, the costs involved, and whether there will be a return on investment.
+
 The project was conceived and sponsored by AW’s Innovation Director, João Muller, and also has the backing of the company’s CEO, Carlos Silveira, who views the use of data as a long-term strategic differentiator. However, the Commercial Director, Silvana Teixeira, believes the funds invested in the project could have been allocated to promotional activities that—in her view—generate immediate sales results. Furthermore, she fails to see how creating a modern data infrastructure will benefit her commercial department, given that previous promises to make the area "data-driven"—made by vendors of other systems like CRM and Web Analytics—failed to deliver the promised results.
+
 A specific request from CEO Carlos Silveira is that the construction of this data platform guarantees the quality and accuracy of the output data; in other words, the Analytics Engineering team must be able to confirm that the information aligns with the figures verified by the accounting audit team. Carlos cited the example of gross sales in 2011, which totaled $12,646,112.16. He would like tests performed to verify the accuracy of this figure within the models being built, following the approach from a "Modern Data Stack" workshop he recently attended.
+
 In addition to these individuals, the IT Director, Nilson Ramos, is responsible for ensuring data access and has designated an analyst, Gabriel Santos, to assist with this. Gabriel is currently responsible for managing databases and answering ad-hoc questions from business units that require SQL. His schedule is quite tight, so coordinated communication and efficient interactions are essential to ensure all necessary data is available for the project.
 
 ## Data description

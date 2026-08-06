@@ -21,7 +21,7 @@ In addition to these individuals, the IT Director, Nilson Ramos, is responsible 
 ## Data description
 Adventure Works has a transactional database (PostgreSQL) that stores data from its various areas. This data is distributed across 68 tables divided into 5 schemas: HR (Human Resources), sales (vendas), production (produção), and purchasing (compras).
 
-### Challenge objective
+## Challenge objective
 The goal is to build a data model for conducting clear and reliable analyses using a base dataset derived from Adventure Works raw data, enabling you to answer the following business questions:
 
 a - What are the number of orders, quantity purchased, and total transaction value by product, card type, sales reason, sales date, customer, status, city, state, and country?

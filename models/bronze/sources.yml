@@ -5,8 +5,9 @@ sources:
     catalog: mesh_dev_db
     schema: adventure_works
     tables:
-      - name: sales_salesorderheader
-      - name: sales_salesorderdetail
       - name: sales_creditcard
+      - name: sales_customer
+      - name: sales_salesorderdetail
+      - name: sales_salesorderheader
       - name: sales_salesorderheadersalesreason
       - name: sales_salesreason

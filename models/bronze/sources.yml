@@ -6,3 +6,4 @@ sources:
     schema: adventure_works
     tables:
       - name: sales_salesorderheader
+      - name: sales_salesorderdetail

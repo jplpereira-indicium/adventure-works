@@ -7,3 +7,4 @@ sources:
     tables:
       - name: sales_salesorderheader
       - name: sales_salesorderdetail
+      - name: sales_creditcard

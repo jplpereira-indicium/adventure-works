@@ -9,3 +9,4 @@ sources:
       - name: sales_salesorderdetail
       - name: sales_creditcard
       - name: sales_salesorderheadersalesreason
+      - name: sales_salesreason

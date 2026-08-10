@@ -5,6 +5,7 @@ sources:
     catalog: mesh_dev_db
     schema: adventure_works
     tables:
+      - name: person_address
       - name: sales_creditcard
       - name: sales_customer
       - name: sales_salesorderdetail

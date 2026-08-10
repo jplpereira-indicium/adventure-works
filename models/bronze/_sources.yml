@@ -6,6 +6,7 @@ sources:
     schema: adventure_works
     tables:
       - name: person_address
+      - name: person_stateprovince
       - name: sales_creditcard
       - name: sales_customer
       - name: sales_salesorderdetail

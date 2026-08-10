@@ -5,6 +5,12 @@ sources:
     catalog: mesh_dev_db
     schema: adventure_works
     tables:
+      - name: person_address
+      - name: person_countryregion
+      - name: person_stateprovince
+      - name: production_product
+      - name: production_productcategory
+      - name: production_productsubcategory
       - name: sales_creditcard
       - name: sales_customer
       - name: sales_salesorderdetail

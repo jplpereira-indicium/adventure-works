@@ -9,6 +9,7 @@ sources:
       - name: person_countryregion
       - name: person_stateprovince
       - name: production_product
+      - name: production_productsubcategory
       - name: sales_creditcard
       - name: sales_customer
       - name: sales_salesorderdetail

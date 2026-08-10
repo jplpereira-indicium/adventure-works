@@ -8,6 +8,7 @@ sources:
       - name: person_address
       - name: person_countryregion
       - name: person_stateprovince
+      - name: production_product
       - name: sales_creditcard
       - name: sales_customer
       - name: sales_salesorderdetail

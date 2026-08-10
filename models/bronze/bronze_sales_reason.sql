@@ -4,7 +4,7 @@ with source_data as (
 
     select
         * 
-    from {{ source('adventure_works', 'sales_salesorderheader') }}
+    from {{ source('adventure_works', 'sales_salesreason') }}
 
 )
 

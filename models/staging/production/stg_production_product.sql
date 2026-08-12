@@ -12,7 +12,7 @@ with source_data as (
 
     select
         cast(productid as int) as pk_product
-        ,cast(name as string) as name
+        ,cast(name as string) as product_name
         ,cast(productnumber as string) as product_number
         ,makeflag as is_make
         ,finishedgoodsflag as is_finished_goods

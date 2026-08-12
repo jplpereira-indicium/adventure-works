@@ -12,7 +12,7 @@ with source_data as (
 
     select
         cast(countryregioncode as string) as pk_country_region
-        ,cast(name as string) as name
+        ,cast(name as string) as country_region_name
         ,cast(modifieddate as timestamp) as modified_date
     from source_data
 

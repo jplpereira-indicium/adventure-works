@@ -12,7 +12,7 @@ with source_data as (
 
     select
         cast(productcategoryid as int) as pk_product_category
-        ,cast(name as string) as name
+        ,cast(name as string) as product_category_name
         ,rowguid
         ,cast(modifieddate as timestamp) as modified_date
     from source_data

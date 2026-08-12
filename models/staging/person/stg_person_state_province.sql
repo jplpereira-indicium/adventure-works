@@ -15,7 +15,7 @@ with source_data as (
         ,cast(stateprovincecode as string) as state_province_code
         ,cast(countryregioncode as string) as fk_country_region
         ,isonlystateprovinceflag as is_only_state_province
-        ,cast(name as string) as name
+        ,cast(name as string) as state_province_name
         ,cast(territoryid as int) as fk_territory
         ,rowguid
         ,cast(modifieddate as timestamp) as modified_date

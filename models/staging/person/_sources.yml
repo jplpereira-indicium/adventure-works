@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: adventure_works
+    catalog: mesh_dev_db
+    schema: adventure_works
+    tables:
+      - name: person_address
+      - name: person_countryregion
+      - name: person_stateprovince

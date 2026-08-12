@@ -31,8 +31,8 @@ with source_data as (
         ,cast(currencyrateid as int) as fk_currency_rate
         ,cast(subtotal as decimal(15, 2)) as subtotal
         ,cast(taxamt as decimal(15, 2)) as tax_amount
-        ,cast(freight as decimal(15, 2) as freight
-        ,cast(totaldue as decimal(15, 2) as total_due
+        ,cast(freight as decimal(15, 2)) as freight
+        ,cast(totaldue as decimal(15, 2)) as total_due
         ,cast(comment as string) as comment
         ,rowguid
         ,cast(modifieddate as date) as modified_date

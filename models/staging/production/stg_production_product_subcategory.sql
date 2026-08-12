@@ -15,7 +15,7 @@ with source_data as (
         ,cast(productcategoryid as int) as fk_product_category
         ,cast(name as string) as name
         ,rowguid
-        ,cast(modifieddate as date) as modified_date
+        ,cast(modifieddate as timestamp) as modified_date
     from source_data
 
 )

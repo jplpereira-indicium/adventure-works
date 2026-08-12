@@ -16,7 +16,7 @@ with source_data as (
         ,cast(storeid as int) as fk_store
         ,cast(territoryid as int) as fk_territory
         ,rowguid
-        ,cast(modifieddate as date) as modified_date
+        ,cast(modifieddate as timestamp) as modified_date
     from source_data
 
 )

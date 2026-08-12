@@ -20,7 +20,7 @@ with source_data as (
         ,cast(unitprice as decimal(15, 2)) as unit_price
         ,cast(unitpricediscount as decimal(15, 2)) as unit_price_discount
         ,rowguid
-        ,cast(modifieddate as date) as modified_date
+        ,cast(modifieddate as timestamp) as modified_date
     from source_data
 
 )

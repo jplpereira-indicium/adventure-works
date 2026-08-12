@@ -14,7 +14,7 @@ with source_data as (
         cast(salesreasonid as int) as pk_sales_reason
         ,cast(name as string) as name
         ,cast(reasontype as string) as reason_type
-        ,cast(modifieddate as date) as modified_date
+        ,cast(modifieddate as timestamp) as modified_date
     from source_data
 
 )

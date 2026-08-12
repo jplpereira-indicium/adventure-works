@@ -13,7 +13,7 @@ with source_data as (
     select
         cast(salesorderid as int) as fk_sales_order
         ,cast(salesreasonid as int) as fk_sales_reason
-        ,cast(modifieddate as date) as modified_date
+        ,cast(modifieddate as timestamp) as modified_date
     from source_data
 
 )

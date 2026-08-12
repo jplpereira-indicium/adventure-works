@@ -13,9 +13,9 @@ with source_data as (
     select
         cast(salesorderid as int) as pk_sales
         ,cast(revisionnumber as int) as revision_number
-        ,cast(orderdate as date) as order_date
-        ,cast(duedate as date) as due_date 
-        ,cast(shipdate as date) as ship_date
+        ,cast(orderdate as timestamp) as order_date
+        ,cast(duedate as timestamp) as due_date 
+        ,cast(shipdate as timestamp) as ship_date
         ,cast(status as int) as status_number
         ,onlineorderflag as is_online_order
         ,cast(purchaseordernumber as string) as purchase_order_number
@@ -35,7 +35,7 @@ with source_data as (
         ,cast(totaldue as decimal(15, 2)) as total_due
         ,cast(comment as string) as comment
         ,rowguid
-        ,cast(modifieddate as date) as modified_date
+        ,cast(modifieddate as timestamp) as modified_date
     from source_data
 
 )

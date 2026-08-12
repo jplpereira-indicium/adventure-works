@@ -19,7 +19,7 @@ with source_data as (
         ,cast(postalcode as string) as postal_code
         ,spatiallocation as spatial_location
         ,rowguid
-        ,cast(modifieddate as date) as modified_date
+        ,cast(modifieddate as timestamp) as modified_date
     from source_data
 
 )

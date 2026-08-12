@@ -31,11 +31,11 @@ with source_data as (
         ,cast(style as string) as style
         ,cast(productsubcategoryid as int) as fk_product_subcategory
         ,cast(productmodelid as int) as fk_product_model
-        ,cast(sellstartdate as date) as sell_start_date
-        ,cast(sellenddate as date) as sell_end_date
-        ,cast(discontinueddate as date) as discontinued_date
+        ,cast(sellstartdate as timestamp) as sell_start_date
+        ,cast(sellenddate as timestamp) as sell_end_date
+        ,cast(discontinueddate as timestamp) as discontinued_date
         ,rowguid
-        ,cast(modifieddate as date) as modified_date
+        ,cast(modifieddate as timestamp) as modified_date
     from source_data
 
 )

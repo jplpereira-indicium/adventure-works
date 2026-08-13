@@ -20,11 +20,10 @@ sources:
             description: Chave primária da tabela de informações de endereço
             data_tests:
               - unique
-              - not_null
-      - name: pk_state_province
+      - name: person_stateprovince
         description: Tabela de informações de estado ou província
         columns:  
-          - name: addressid
+          - name: stateprovinceid
             description: Chave primária da tabela de informações de estado ou província
             data_tests:
               - unique

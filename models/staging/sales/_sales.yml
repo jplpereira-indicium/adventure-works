@@ -6,8 +6,45 @@ sources:
     schema: adventure_works
     tables:
       - name: sales_creditcard
-      - name: sales_customer
+        description: Tabela com as informações dos cartões de crédito utilizados pelos clientes
+        columns:  
+          - name: creditcardid
+            description: Chave primária da tabela de cartões de crédito 
+            data_tests:
+              - unique
+              - not_null
       - name: sales_salesorderdetail
+        description: Tabela com os detalhes dos pedidos
+        columns:  
+          - name: salesorderdetailid
+            description: Chave primária da tabela de detalhamnento dos pedidos
+            data_tests:
+              - unique
+              - not_null
       - name: sales_salesorderheader
+        description: Tabela com as informações gerais sobre os pedidos
+        columns:  
+          - name: salesorderid
+            description: Chave primária da tabela de pedidos
+            data_tests:
+              - unique
+              - not_null
       - name: sales_salesorderheadersalesreason
+        description: Tabela de junção entre a tabela de pedidos e a tabela de motivos do pedido
+        columns:  
+          - name: salesorderid
+            description: Chave primária da tabela de pedidos
+            data_tests:
+              - not_null
+          - name: salesreasonid
+            description: Chave primária da tabela de pedidos
+            data_tests:
+              - not_null
       - name: sales_salesreason
+        description: Tabela de motivos do pedido
+        columns:  
+          - name: salesreasonid
+            description: Chave primária da tabela de motivos de pedido
+            data_tests:
+              - unique
+              - not_null

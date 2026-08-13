@@ -1,0 +1,31 @@
+version: 2
+
+sources:
+  - name: adventure_works
+    catalog: mesh_dev_db
+    schema: adventure_works
+    tables:
+      - name: person_address
+        description: Tabela de informações de endereço
+        columns:  
+          - name: addressid
+            description: Chave primária da tabela de informações de endereço
+            data_tests:
+              - unique
+              - not_null
+      - name: person_countryregion
+        description: Tabela de informações de país ou região
+        columns:  
+          - name: countryregioncode
+            description: Chave primária da tabela de informações de endereço
+            data_tests:
+              - unique
+              - not_null
+      - name: pk_state_province
+        description: Tabela de informações de estado ou província
+        columns:  
+          - name: addressid
+            description: Chave primária da tabela de informações de estado ou província
+            data_tests:
+              - unique
+              - not_null

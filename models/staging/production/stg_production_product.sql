@@ -19,12 +19,12 @@ with source_data as (
         ,cast(color as string) as color
         ,cast(safetystocklevel as int) as safety_stock_level
         ,cast(reorderpoint as int) as reorder_point
-        ,cast(standardcost as decimal(15, 2)) as standard_cost
-        ,cast(listprice as decimal(15, 2)) as list_price
+        ,cast(standardcost as double) as standard_cost
+        ,cast(listprice as double) as list_price
         ,cast(size as string) as size
         ,cast(sizeunitmeasurecode as string) as size_unit_measure_code
         ,cast(weightunitmeasurecode as string) as weight_unit_measure_code
-        ,cast(weight as decimal(15, 2)) as weight
+        ,cast(weight as double) as weight
         ,cast(daystomanufacture as int) as days_to_manufacture
         ,cast(productline as string) as product_line
         ,cast(class as string) as class

@@ -11,7 +11,7 @@ with source_data as (
 , renamed as (
     
     select
-        cast(salesorderid as int) as pk_sales
+        cast(salesorderid as int) as pk_sales_order
         ,cast(revisionnumber as int) as revision_number
         ,cast(orderdate as timestamp) as order_date
         ,cast(duedate as timestamp) as due_date 

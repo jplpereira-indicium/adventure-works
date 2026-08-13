@@ -11,7 +11,7 @@ with source_data as (
 , renamed as (
     
     select
-        cast(salesorderid as int) as pk_sales
+        cast(salesorderid as int) as pk_sales_order
         ,cast(revisionnumber as int) as revision_number
         ,cast(orderdate as timestamp) as order_date
         ,cast(duedate as timestamp) as due_date 
@@ -29,10 +29,10 @@ with source_data as (
         ,cast(creditcardid as int) as fk_credit_card
         ,cast(creditcardapprovalcode as string) as credit_card_approval_code
         ,cast(currencyrateid as int) as fk_currency_rate
-        ,cast(subtotal as decimal(15, 2)) as subtotal
-        ,cast(taxamt as decimal(15, 2)) as tax_amount
-        ,cast(freight as decimal(15, 2)) as freight
-        ,cast(totaldue as decimal(15, 2)) as total_due
+        ,cast(subtotal as double) as subtotal
+        ,cast(taxamt as double) as tax_amount
+        ,cast(freight as double) as freight
+        ,cast(totaldue as double) as total_due
         ,cast(comment as string) as comment
         ,rowguid
         ,cast(modifieddate as timestamp) as modified_date

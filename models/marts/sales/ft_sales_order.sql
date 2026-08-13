@@ -10,21 +10,21 @@ with sales_order as (
 , credit_card as (
 
     select *
-    from {{ ref('int_dim_creditcard') }}
+    from {{ ref('int_dim_sales_creditcard') }}
 
 )
 
 , address as (
 
     select *
-    from {{ ref('int_dim_address') }}
+    from {{ ref('int_dim_person_address') }}
 
 )
 
 , product as (
 
     select *
-    from {{ ref('int_dim_product') }}
+    from {{ ref('int_dim_production_product') }}
 
 )
 

@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: dim_production_product
+    description: Tabela final da dimensão de produto
+    columns:
+      - name: pk_product
+        description: Chave primária da tabela final de informações de produto
+        tests:
+          - unique
+          - not_null
+      

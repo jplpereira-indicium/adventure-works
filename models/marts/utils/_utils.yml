@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_utils_date
+    description: Tabela final da dimensão de data
+    columns:
+      - name: pk_date
+        description: Chave primária da tabela final da dimensão de data
+        tests:
+          - unique
+          - not_null

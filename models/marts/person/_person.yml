@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: dim_person_address
+    description: Tabela final da dimensão de endereço
+    columns:
+      - name: pk_address
+        description: Chave primária da tabela final de informações de endereço
+        tests:
+          - unique
+          - not_null
+      

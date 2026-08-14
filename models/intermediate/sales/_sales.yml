@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: int_dim_sales_creditcard
+    description: Tabela intermediária da dimensão de cartões de crédito
+    columns:
+      - name: pk_credit_card
+        description: Chave primária da tabela intermediária de informações de cartão de crédito
+        tests:
+          - unique
+          - not_null
+  - name: int_ft_sales_order_reason
+    description: Tabela intermediária fato de junção da tabela de pedidos com a tabela de motivos do pedido
+    data_tests:
+          - dbt_utils.unique_combination_of_columns:
+              arguments:
+                combination_of_columns:
+                  - fk_sales_order
+                  - pk_sales_reason
+  - name: int_ft_sales_order
+    description: Tabela intermediária fato dos pedidos
+    columns:
+      - name: pk_sales_order
+        description: Chave primária da tabela intermediária fato dos pedidos
+        tests:
+          - not_null
+      

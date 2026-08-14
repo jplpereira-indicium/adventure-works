@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_dim_utils_date
+    description: Tabela intermediária da dimensão de data
+    columns:
+      - name: pk_date
+        description: Chave primária da tabela intermediária da dimensão de data
+        tests:
+          - unique
+          - not_null

@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: int_dim_production_product
+    description: Tabela intermediária da dimensão de produto
+    columns:
+      - name: pk_product
+        description: Chave primária da tabela intermediária de informações de produto
+        tests:
+          - unique
+          - not_null
+      

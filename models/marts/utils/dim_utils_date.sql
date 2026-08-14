@@ -5,7 +5,7 @@ with
     date as (
 
         select *
-        from {{ ref('int_dim_date') }}
+        from {{ ref('int_dim_utils_date') }}
 
     )
 

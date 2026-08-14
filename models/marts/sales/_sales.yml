@@ -9,6 +9,20 @@ models:
         tests:
           - unique
           - not_null
+  - name: ft_sales_order_detail
+    description: Tabela final fato de detalhamento dos pedidos
+    columns:
+      - name: pk_sales_order_detail
+        description: Chave primária da tabela final fato de detalhamento dos pedidos
+        tests:
+          - unique
+          - not_null
+    data_tests:
+          - dbt_utils.unique_combination_of_columns:
+              arguments:
+                combination_of_columns:
+                  - fk_sales_order
+                  - pk_sales_reason
   - name: ft_sales_order_reason
     description: Tabela final fato de junção da tabela de pedidos com a tabela de motivos do pedido
     data_tests:
@@ -23,5 +37,6 @@ models:
       - name: pk_sales_order
         description: Chave primária da tabela final fato dos pedidos
         tests:
+          - unique
           - not_null
       

@@ -10,7 +10,8 @@ with sales_order_detail as (
 , full_sales_order_detail as (
 
     select
-        sales_order_detail.fk_sales_order
+        sales_order_detail.pk_sales_order_detail
+        ,sales_order_detail.fk_sales_order
         ,sales_order_detail.carrier_tracking_number
         ,sales_order_detail.order_quantity
         ,sales_order_detail.fk_product
